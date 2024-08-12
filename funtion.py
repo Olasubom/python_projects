@@ -33,9 +33,10 @@ def student_grade(score):
     else:
         result = "F"
     return score_of_f, result
-score =[64 ,43 ,23 , 15 ,50]
+score_input = input("input your score  ")
+score = [int (item) for item in score_input.split()]
 score_of_f, result = student_grade(score)
-print(f"your average score is: {score_of_f} ")
+print(f"your average score is: {score_of_f:.2f} ")
 print(f"your RESULT is {result}")
 
 print("")
