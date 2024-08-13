@@ -24,12 +24,27 @@ def game():
 
         if player == 1 and computer == 3 or player == 3 and computer == 2 or player == 2 and computer == 1:
             print("YOU WIN!!")
-            break
+            
         elif player == computer:
             print("TIE TRY AGAIN")
         else:
             print("COMPUTER WINS!!")
-            break
+
+        while True:
+            play_again = str(input("\n Y for yes \n Q for quit\n")).lower()
+            if play_again not in ["y" , "q"]:
+                print("input is not 'Y' or 'Q'")
+                continue
+            else:
+                break
+        if play_again == "y":
+            return game()
+        else:
+            print("THANKS FOR PLAYING😁")
+            sys.exit("BYE😭😭")      
+    
+    
+
 
 game()                
 

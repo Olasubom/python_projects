@@ -22,13 +22,13 @@ import string
 def student_grade(score):
     score_of_f = sum(score) / len(score)
     
-    if score_of_f >= 90:
+    if score_of_f >= 80:
         result = "A"
-    elif score_of_f >= 80:
-        result = "B"
     elif score_of_f >= 70:
+        result = "B"
+    elif score_of_f >= 50:
         result = "C"
-    elif score_of_f >= 60:
+    elif score_of_f >= 40:
         result = "D"
     else:
         result = "F"
@@ -45,7 +45,7 @@ print("")
 def time_travel(distance ,speed):
     time = distance/speed 
     return time
-m_p_h = time_travel(distance = int(input("distance needed: ")),speed= (int(input("speed km/hour: "))))
+m_p_h = time_travel(distance = int(input("distance needed: ")),speed= (int(input(f"speed km/hour: "))))
 print(m_p_h)
 
 
