@@ -34,48 +34,48 @@ import string
 
 # savings_plan()
 
-def taxi_fare(distance_kilometer):
+# def taxi_fare(distance_kilometer):
     
-    base_fee = 500
-    per_kilometer_travelled = 20
-    total_fee = base_fee + (per_kilometer_travelled * distance_kilometer)
-    return total_fee
-kilometer = int(input("the number of kilometer travelled: "))
-fee = taxi_fare(kilometer)
-print(f"your total fee for {kilometer} kilometer is ${fee}")
+#     base_fee = 500
+#     per_kilometer_travelled = 20
+#     total_fee = base_fee + (per_kilometer_travelled * distance_kilometer)
+#     return total_fee
+# kilometer = int(input("the number of kilometer travelled: "))
+# fee = taxi_fare(kilometer)
+# print(f"your total fee for {kilometer} kilometer is ${fee}")
 
-print("")
+# print("")
 
 
-def discount_cal(price):
-    c_f_d = 10000
-    discount_fee = 0.10
+# def discount_cal(price):
+#     c_f_d = 10000
+#     discount_fee = 0.10
 
-    if price > c_f_d:
-        discount = price * discount_fee
-        final_price = price - discount
+#     if price > c_f_d:
+#         discount = price * discount_fee
+#         final_price = price - discount
 
-    else:
-        final_price =  price
+#     else:
+#         final_price =  price
 
-    return final_price
-goods_price = int(input("Enter the price of goods bought: "))
-final_price = discount_cal(goods_price)
-print(f"Price: ${goods_price}")
-print(f"After adding discount: ${final_price} ")
+#     return final_price
+# goods_price = int(input("Enter the price of goods bought: "))
+# final_price = discount_cal(goods_price)
+# print(f"Price: ${goods_price}")
+# print(f"After adding discount: ${final_price} ")
 
 def lone_calculator():
     lone_amount = int(input("input the amount of  loan collected: "))
-    lone_intrest = int(input("intrest rate"))
-    lone_term = int(input("input terms"))
+    lone_intrest = float(input("intrest rate "))
+    loan_term = int(input("input terms "))
 
-
-    def calculate_payment(lone_rate):
-        nonlocal lone_amount
-        nonlocal lone_intrest
-        intrest = (lone_amount * lone_intrest * lone_term) /100
+    def calculate_payment():
+        nonlocal lone_amount,lone_intrest,loan_term
+        intrest = (lone_amount * lone_intrest * loan_term) /100
         return intrest
-    return calculate_payment
+    return calculate_payment()
+total = lone_calculator()
+print(f"the total intrest of the loan is ${total:.2f}")
 
 
 
