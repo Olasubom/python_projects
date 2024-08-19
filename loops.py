@@ -1,24 +1,24 @@
-value =1
-while value <= 10:
-    value += 1
-    if value == 5:
-        continue
-    print(value)
+# value =1
+# while value <= 10:
+#     value += 1
+#     if value == 5:
+#         continue
+#     print(value)
 
 
 
-names =["bola" ,"ade" ,"femi"]
-actions =["eats" ,"brush" ,"fights"]
+# names =["bola" ,"ade" ,"femi"]
+# actions =["eats" ,"brush" ,"fights"]
 
-for name in names:
-    for action in actions:
-     print(name + " " + action + ".")
+# for name in names:
+#     for action in actions:
+#      print(name + " " + action + ".")
 
-print("")
+# print("")
 
-for action in actions:
-    for name in names:
-     print(name + " " + action + ".")
+# for action in actions:
+#     for name in names:
+#      print(name + " " + action + ".")
 
 inventory = {
      "Apples": (1.20, 50),

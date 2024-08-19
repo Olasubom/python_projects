@@ -76,3 +76,17 @@
 # key .items to list key/value pairs as tuples
 # to get a result of a  list or a certain numbers of weeks  in a  loop use "range"
 # "*" makes data inside a  function tupol, you can use  any word but  the most popular oone is "args" which stands  for arguement and the oth er one "kwargs" stands for (key word argument)
+# modules are used to import a function in another file 
+#      counts = email.split("@")[1]
+# code that can be useful later
+    #     if counts in count:
+    #         count[counts] += 1
+    #     else:
+    #         count[counts] = 1
+    # for domain , count in count.items():
+    #     print(f"domain  :{domain} count :{count}")
+# add multiple input 
+    # [int (item) for item in purchased_items.split()]   
+    # purchase = purchased_items.split       
+# an argument is 
+# argpars is a modul thta is used to generate command line commands

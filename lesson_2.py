@@ -41,42 +41,48 @@
 #[] used for the  key for  dict()// for copy
 #tuple()//for copy
 
-fruit = ["apple" , "banana" , "orange" , "pinapple"]
+# fruit = ["apple" , "banana" , "orange" , "pinapple"]
 
-#tuple of student information
-student = ("alice" , 25 , "computer_science" , "biology")
+# #tuple of student information
+# student = ("alice" , 25 , "computer_science" , "biology")
 
-#dictionary of contact information
-contact = {"name":"Bob" , "phone":"123-456-7890" , "email":"bob@gmail.com"}
+# #dictionary of contact information
+# contact = {"name":"Bob" , "phone":"123-456-7890" , "email":"bob@gmail.com"}
 
-fruit_copy = list(fruit)
-student_copy = tuple(student)
-contact_copy = dict(contact)
+# fruit_copy = list(fruit)
+# student_copy = tuple(student)
+# contact_copy = dict(contact)
 
-print(fruit_copy)
-print(student_copy)
-print(contact)
+# print(fruit_copy)
+# print(student_copy)
+# print(contact)
 
-fruit_copy.append("mango")
-fruit_copy.append("carrot")
-print(fruit_copy)
-student_copy_two = list (student_copy)
-student_copy_two.append("bola")
-student_copy_two.append(26)
-student_copy_two = tuple (student_copy_two)
-print(student_copy_two)
+# fruit_copy.append("mango")
+# fruit_copy.append("carrot")
+# print(fruit_copy)
+# student_copy_two = list (student_copy)
+# student_copy_two.append("bola")
+# student_copy_two.append(26)
+# student_copy_two = tuple (student_copy_two)
+# print(student_copy_two)
 
-contact_copy["City:"] = ("Lagos")
-contact_copy["Country"] = ("Nigeria")
-print(contact_copy)
+# contact_copy["City:"] = ("Lagos")
+# contact_copy["Country"] = ("Nigeria")
+# print(contact_copy)
 
-del fruit_copy[5]
-print(fruit_copy)
+# del fruit_copy[5]
+# print(fruit_copy)
 
-student_copy_three = list(student_copy_two)
-student_copy_three.pop(5)
-student_copy_three = tuple(student_copy_three)
-print(student_copy_three)
+# student_copy_three = list(student_copy_two)
+# student_copy_three.pop(5)
+# student_copy_three = tuple(student_copy_three)
+# print(student_copy_three)
 
-contact_copy.pop("Country")
-print(contact_copy)
+# contact_copy.pop("Country")
+# print(contact_copy)
+
+
+value = "5"
+print(type(value))
+print(str(value) == "5")
+print(isinstance( value, str))
