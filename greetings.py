@@ -5,5 +5,5 @@ def greetings(name, lang):
         "French" :"Bonjour",
         "Yoruba" :"Ele o"
         }
-    msg = f"{greeting[lang]} {(name)}!"
+    msg = f"{greeting[lang]} {name}"
     print(msg)

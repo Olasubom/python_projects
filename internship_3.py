@@ -239,11 +239,6 @@ print(f"total sals :${result}")
 
 
 
-            
-    
-
-
-
 
 
 
