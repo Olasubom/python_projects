@@ -245,7 +245,6 @@ def calculate_late_fee ():
              return total_fee
     except ValueError:
         sys.exit("input the number of days")
-        
 late_fee = calculate_late_fee()
 
 if late_fee is not None:

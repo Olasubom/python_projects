@@ -329,65 +329,65 @@
 
 
 
-class TASK:
-    def __init__(self, description, due_date):
-        self.description = description
-        self.due_date = due_date
-        self.is_completed = False
+# class TASK:
+#     def __init__(self, description, due_date):
+#         self.description = description
+#         self.due_date = due_date
+#         self.is_completed = False
 
-    def mark_task(self):
-        self.is_completed = True
-        print("Task has been completad ")
+#     def mark_task(self):
+#         self.is_completed = True
+#         print("Task has been completad ")
 
-    def __str__(self):
-        statuse = "Completed" if self.is_completed else "Not Completed"
-        return f" Task: {self.description} Due date :{self.due_date}  statuse: {statuse}"
-class Task_manager:
-    def __init__(self):
-        self.task = []
+#     def __str__(self):
+#         statuse = "Completed" if self.is_completed else "Not Completed"
+#         return f" Task: {self.description} Due date :{self.due_date}  statuse: {statuse}"
+# class Task_manager:
+#     def __init__(self):
+#         self.task = []
 
-    def add_task(self , task):
-        self.task.append(task)
-        print(f" Task '{task.description}' added")
-    def remove_task(self , task_description):
-        for task in self.task:
-            if  task.description ==  task_description:
-                self.task.remove(task)
-                return
-        print(f"task {task_description} not found")
-    def mark_task(self , task_description):
-        for task in self.task:
-            if  task.description ==  task_description:
-                task.mark_task()
-                return
-        print(f"task {task_description} not found")
-    def sort_due_date(self):
-        self.task.sort(key=lambda task: task.due_date)
-        print('task has been sorted by due date')  
-    def show_task(self):
-        if not self.task:
-            print("no task added")
-        for task in self.task:
-            print(task)
+#     def add_task(self , task):
+#         self.task.append(task)
+#         print(f" Task '{task.description}' added")
+#     def remove_task(self , task_description):
+#         for task in self.task:
+#             if  task.description ==  task_description:
+#                 self.task.remove(task)
+#                 return
+#         print(f"task {task_description} not found")
+#     def mark_task(self , task_description):
+#         for task in self.task:
+#             if  task.description ==  task_description:
+#                 task.mark_task()
+#                 return
+#         print(f"task {task_description} not found")
+#     def sort_due_date(self):
+#         self.task.sort(key=lambda task: task.due_date)
+#         print('task has been sorted by due date')  
+#     def show_task(self):
+#         if not self.task:
+#             print("no task added")
+#         for task in self.task:
+#             print(task)
 
-if __name__=="__main__":
-    start = Task_manager()
+# if __name__=="__main__":
+#     start = Task_manager()
 
-task_1 = TASK("print this code", "2024-29-08")
-task_2 = TASK("look around ","2024-22-08")
-task_3 = TASK("print this code and look","2024-27-08")
+# task_1 = TASK("print this code", "2024-29-08")
+# task_2 = TASK("look around ","2024-22-08")
+# task_3 = TASK("print this code and look","2024-27-08")
 
-start.add_task(task_1)
-start.add_task(task_2)
-start.add_task(task_3)
-print("\nshow tasks")
-start.show_task()
-print("\nSorting task by due date")
-start.sort_due_date()
-start.show_task()
-print("\nMark task 'print this code' as completed")
-start.mark_task("print this code")
-start.show_task()
+# start.add_task(task_1)
+# start.add_task(task_2)
+# start.add_task(task_3)
+# print("\nshow tasks")
+# start.show_task()
+# print("\nSorting task by due date")
+# start.sort_due_date()
+# start.show_task()
+# print("\nMark task 'print this code' as completed")
+# start.mark_task("print this code")
+# start.show_task()
 
 
 # Task Class:
@@ -411,4 +411,82 @@ start.show_task()
 # remove_task(task_description): Removes a task from the list by its description.
 
 # mark_task_completed(task_description): Finds a task by its description and marks it as completed.
-        
+
+
+
+# Create a class Flyable with a method fly() that prints “I can fly”. Create another class Swimmable with a method swim() that prints “I can swim”. Then create a class Duck that inherits from both Flyable and Swimmable. Add a method make_sound() in the Duck class that prints “Quack”. Demonstrate how the Duck class uses methods from both parent classes.
+
+
+
+# class Flyable:
+#     def fly():
+#         print("i cam fly")
+# class Swimmable:
+#     def swim():
+#         print("i can swim")
+# class Duck(Flyable , Swimmable):
+#     def make_sound():
+#         print("Quack")
+
+# mind = Duck
+# mind.fly()
+# mind.swim()
+# mind.make_sound()
+
+
+# class Person:
+#     def __init__(self , name):
+#         self.name = name
+#     def show_info(self):
+#         print(f"NAME: {self.name}")
+
+# class Student(Person):
+#     def __init__(self, name, grade):
+#         super().__init__(name)
+#         self.grade = grade
+#     def show_info(self):
+#         super().show_info()
+#         print(f" GRADE: {self.grade}")
+
+# class GraduateStudent(Student):
+#     def __init__(self, name, grade, thesis_title):
+#         super().__init__(name, grade)
+#         self.thesis = thesis_title
+#     def show_info(self):
+#         super().show_info()
+#         print(f"Thesis_Title_Information: {self.thesis}")
+
+
+# grade = GraduateStudent("ADE" , 79.9 , "Biologist")
+# grade.show_info()    
+
+
+
+# class LibraryItem:
+#     total_count = 0
+
+#     def __init__(self):
+#         LibraryItem.incriment_count()
+#     @classmethod
+#     def incriment_count(clr):
+#         clr.total_count += 1
+
+# class Book(LibraryItem):
+#     def __init__(self, title):
+#         super().__init__()
+#         self.title = title
+# class magazine(LibraryItem):
+#     def __init__(self , title):
+#         super().__init__()
+#         self.title = title
+
+# start = Book("game")
+# start = Book("bag")
+# start = Book("goal")
+# play = magazine("money")
+# play = magazine("package")
+# play = magazine("juice")
+# print(f"total counts {LibraryItem.total_count}")
+
+
+

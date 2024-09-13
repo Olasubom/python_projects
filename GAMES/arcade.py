@@ -50,5 +50,4 @@ if __name__ == "__main__":
 
 
      args = key.parse_args()
-     start_acade = arcade(args.name)
-     start_acade()
+     arcade(args.name)
