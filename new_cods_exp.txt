@@ -1,0 +1,44 @@
+1. def clear_screen()
+    Purpose: This function is designed to clear the terminal/console screen.
+    Explanation:
+
+    The line os.system('cls' if os.name == 'nt' else 'clear') checks the operating system type.
+    If the OS is Windows (os.name == 'nt'), it uses the cls command to clear the screen.
+    If it's a Unix-based system (like Linux or macOS), it uses the clear command.
+
+2. [:size*size//2]: The code then slices this list to the first   size * size // 2 elements. For example, if the board size is 4x4, it takes the first 8 letters. If the board is 6x6, it takes the first 18 letters.
+
+
+3. * 2: The list of letters is duplicated so that each card has a matching pair. For a 4x4 board, this would give you 8 pairs of cards (16 cards total)
+
+4. ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+    And size = 2, the iterations would proceed as follows:
+    First iteration (i = 0): cards[0:2] gives ['A', 'B'], which is added to the board.
+    Second iteration (i = 1): cards[2:4] gives ['C', 'D'], which is added to the board.
+    Third iteration (i = 2): cards[4:6] gives ['E', 'F'], which is added to the board.
+    Fourth iteration (i = 3): cards[6:8] gives ['G', 'H'], which is added to the board.
+
+
+4. enumerate() function:
+    The function enumerate() does two things at once:
+-----------
+    It loops over the items in the list.
+    It also keeps track of where you are in the list (i.e., the index).The enumerate() function helps you get both the index and the value (row) at the same time
+
+5. end="":
+---------
+    This argument in the print() function ensures that printing continues on the same line instead of starting a new line after printing each card.
+    After each row is printed, print() without arguments moves to the next lin
+
+6.  all():
+---------
+    The all() function checks if all elements in an iterable (like a list) are True. If all elements are True, it returns True, otherwise, it returns False.
+    all(all(row) for row in revealed):
+-----------
+    This is a nested all() call.
+    The inner all(row) checks if every item in the current row is True (meaning all cards in that row are revealed).
+    The outer all(...) checks if every row in the revealed list passes this test (i.e., if every card in every row is revealed).
+    If all rows are completely revealed (i.e., all elements are True), the function returns True. This means the player has revealed all the cards on the board and won the game.
+
+
+7. 

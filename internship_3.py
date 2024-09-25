@@ -337,7 +337,7 @@
 
 #     def mark_task(self):
 #         self.is_completed = True
-#         print("Task has been completad ")
+#         print("Task has been completed ")
 
 #     def __str__(self):
 #         statuse = "Completed" if self.is_completed else "Not Completed"

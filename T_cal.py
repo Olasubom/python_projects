@@ -4,7 +4,7 @@ from args import argparse
 
 if __name__ == ("__main__"):
     project = argparse.ArgumentParser(
-        description=" A command line calculator that takes two numbers and operation as an argument"
+        description=" A command line calculator that takes t1wo numbers and operation as an argument"
 
     )
 
